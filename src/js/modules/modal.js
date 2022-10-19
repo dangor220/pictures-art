@@ -124,7 +124,7 @@ const modals = () => {
 		'.popup-consultation .popup-close'
 	);
 	bindModal('.fixed-gift', '.popup-gift', '.popup-gift .popup-close', true);
-	showModalByTime('.popup-consultation', 60000);
+	// showModalByTime('.popup-consultation', 60000);
 };
 
 export default modals;
