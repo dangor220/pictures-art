@@ -18,13 +18,15 @@ const modals = () => {
 				if (e.target) {
 					e.preventDefault();
 				}
+				
+				if (document.querySelector('.fixed-gift')) {
+					document.querySelector('.fixed-gift').style.marginRight = `${scroll}px`;
+				}
+
 				if (destroy) {
 					item.remove();
-				} else {
-					document.querySelector(
-						'.fixed-gift'
-					).style.marginRight = `${scroll}px`;
-				}
+				} 
+
 				btnPressed = true;
 
 				windows.forEach((item) => {
@@ -46,7 +48,9 @@ const modals = () => {
 			modal.style.display = 'none';
 			document.body.style.overflow = '';
 			document.body.style.marginRight = `0px`;
-			if (!destroy) document.querySelector('.fixed-gift').marginRight = `0px`;
+			if (document.querySelector('.fixed-gift')) {
+				document.querySelector('.fixed-gift').style.marginRight = `0px`;
+			}
 		});
 
 		modal.addEventListener('click', (e) => {
@@ -59,8 +63,9 @@ const modals = () => {
 				document.body.style.overflow = '';
 				document.body.style.marginRight = `0px`;
 
-				if (!destroy)
+				if (document.querySelector('.fixed-gift')) {
 					document.querySelector('.fixed-gift').style.marginRight = `0px`;
+				}
 			}
 		});
 	}
