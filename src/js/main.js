@@ -7,14 +7,18 @@ import showMoreStyles from './modules/showMoreStyles';
 import slider from './modules/slider';
 
 window.addEventListener('DOMContentLoaded', () => {
-  
+
+  let orderPrice = {};
+
+  calc(orderPrice, '#size', '#material', '#options', '.promocode', '.calc-price');
+
   modals();
   slider('.main-slider-item', 'vertical');
   slider('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn');
-  forms();
+  forms(orderPrice);
   mask('[name="phone"]');
   checkTextLang('[name="name"]');
   checkTextLang('[name="message"]');
   showMoreStyles('.button-styles', '.styles .row');
-  calc('#size', '#material', '#options', '.promocode', '.calc-price');
+  
 })

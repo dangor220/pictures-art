@@ -1,6 +1,6 @@
 import { postData } from "../services/requests";
 
-const forms = () => {
+const forms = (orderPrice) => {
 	const form = document.querySelectorAll('form'),
 		inputs = document.querySelectorAll('input'),
 		comments = document.querySelectorAll('textarea'),
@@ -68,6 +68,12 @@ const forms = () => {
 
 			const formData = new FormData(item);
 			let api;
+
+			if (item.classList.contains('calc-from')) {
+				for (const key in orderPrice) {
+					formData.append(key, orderPrice[key]);
+				}
+			}
 
 			item.closest('.popup-design') || item.classList.contains('calc-from')
 				? (api = path.design)
