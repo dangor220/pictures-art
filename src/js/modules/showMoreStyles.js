@@ -5,7 +5,7 @@ const showMoreStyles = (trigger, styles) => {
 		styleWrap = document.querySelector(styles);
 
 	btn.addEventListener('click', () => {
-		getData('assets/d3.json')
+		getData('assets/db.json')
 			.then((data) => {
 				createStyles(data.styles);
         btn.remove();
