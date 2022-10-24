@@ -1,3 +1,4 @@
+import calc from './modules/calc';
 import checkTextLang from './modules/checkTextLang';
 import forms from './modules/forms';
 import mask from './modules/mask';
@@ -15,4 +16,5 @@ window.addEventListener('DOMContentLoaded', () => {
   checkTextLang('[name="name"]');
   checkTextLang('[name="message"]');
   showMoreStyles('.button-styles', '.styles .row');
+  calc('#size', '#material', '#options', '.promocode', '.calc-price');
 })
