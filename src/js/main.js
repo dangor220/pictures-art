@@ -3,6 +3,7 @@ import checkTextLang from './modules/checkTextLang';
 import forms from './modules/forms';
 import mask from './modules/mask';
 import modals from './modules/modal';
+import portfolio from './modules/portfolio';
 import showMoreStyles from './modules/showMoreStyles';
 import slider from './modules/slider';
 
@@ -20,5 +21,5 @@ window.addEventListener('DOMContentLoaded', () => {
   checkTextLang('[name="name"]');
   checkTextLang('[name="message"]');
   showMoreStyles('.button-styles', '.styles .row');
-  
+  portfolio('.portfolio-menu', '.portfolio-block', '.portfolio-no');
 })
