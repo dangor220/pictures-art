@@ -5,6 +5,7 @@ import mask from './modules/mask';
 import modals from './modules/modal';
 import portfolio from './modules/portfolio';
 import showMoreStyles from './modules/showMoreStyles';
+import showPicture from './modules/showPicture';
 import slider from './modules/slider';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -22,4 +23,5 @@ window.addEventListener('DOMContentLoaded', () => {
   checkTextLang('[name="message"]');
   showMoreStyles('.button-styles', '.styles .row');
   portfolio('.portfolio-menu', '.portfolio-block', '.portfolio-no');
+  showPicture('.sizes-block');
 })
