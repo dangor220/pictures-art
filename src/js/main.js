@@ -1,3 +1,4 @@
+import accordeon from './modules/accordeon';
 import calc from './modules/calc';
 import checkTextLang from './modules/checkTextLang';
 import forms from './modules/forms';
@@ -24,4 +25,5 @@ window.addEventListener('DOMContentLoaded', () => {
   showMoreStyles('.button-styles', '.styles .row');
   portfolio('.portfolio-menu', '.portfolio-block', '.portfolio-no');
   showPicture('.sizes-block');
+  accordeon('#accordion', '.accordion-heading', 'accordion-heading-active', '.accordion-block');
 })
