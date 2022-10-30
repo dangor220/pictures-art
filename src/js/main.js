@@ -9,6 +9,7 @@ import portfolio from './modules/portfolio';
 import showMoreStyles from './modules/showMoreStyles';
 import showPicture from './modules/showPicture';
 import slider from './modules/slider';
+import up from './modules/up';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -28,4 +29,5 @@ window.addEventListener('DOMContentLoaded', () => {
   showPicture('.sizes-block');
   accordeon('#accordion', '.accordion-heading', 'accordion-heading-active', '.accordion-block');
   burger('.burger', '.burger-menu');
+  up('.pageup');
 })
