@@ -16,7 +16,7 @@ const up = (btn) => {
 	function calcScroll() {
 		links.forEach((link) => {
 			link.addEventListener('click', function (event) {
-  
+
 				let scrollTop = Math.round(elem.scrollTop || body.scrollTop);
 
 				if (this.hash !== '') {
@@ -24,12 +24,12 @@ const up = (btn) => {
 
 					let hashElement = document.querySelector(this.hash),
 						hashElementTop = 0;
-
+          
 					while (hashElement.offsetParent) {
 						hashElementTop += hashElement.offsetTop;
 						hashElement = hashElement.offsetParent;
 					}
-
+          
 					hashElementTop = Math.round(hashElementTop);
 					smoothScroll(scrollTop, hashElementTop, this.hash);
 				}

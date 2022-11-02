@@ -2,6 +2,7 @@ import accordeon from './modules/accordeon';
 import burger from './modules/burger';
 import calc from './modules/calc';
 import checkTextLang from './modules/checkTextLang';
+import drop from './modules/drop';
 import forms from './modules/forms';
 import mask from './modules/mask';
 import modals from './modules/modal';
@@ -30,4 +31,5 @@ window.addEventListener('DOMContentLoaded', () => {
   accordeon('#accordion', '.accordion-heading', 'accordion-heading-active', '.accordion-block');
   burger('.burger', '.burger-menu');
   up('.pageup');
+  drop();
 })
